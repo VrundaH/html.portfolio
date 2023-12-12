@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Portfolio - Vrunda Hingarajiya</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.jpg" class="logo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                 <div class="header-text">
+                    <p>UI/UX Designer</p>
+                    <h1>Hello, I'm <span>Vrunda</span><br>Hingarajiya from Canada</h1>
+                 </div>
+            </div>
+        </div>
+<!--------------------------------About------------------------------------>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                    <img src="images/image4.jpeg"></div>
+                    <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a recent graduate in computer programming with a passion for technology and a drive to create innovative solutions. With a solid foundation in various software languages, I am eager to contribute my skills and knowledge to the ever-evolving world of technology.
+                        During my academic journey, I gained proficiency in programming languages and software development, allowing me to tackle complex problems and craft efficient solutions. My education provided me with a strong theoretical background, which I have complemented with practical experience.
+                        One of the highlights of my early career was my role as an Automation Analyst during my cooperative education program. In this position, I had the opportunity to work on real-world projects, where I utilized my programming skills to design and implement automation solutions that improved efficiency and productivity. This experience not only honed my technical abilities but also taught me the importance of teamwork, communication, and problem-solving in a professional setting.
+                        I am excited to continue my journey in the world of technology, contributing to projects that challenge my abilities and expand my horizons. My goal is to stay at the forefront of innovation, staying up-to-date with the latest technologies, and delivering high-quality solutions to make a meaningful impact.
+                        I am ready to bring my passion for programming, problem-solving skills, and dedication to every project I undertake. I look forward to new opportunities and collaborations as I continue to grow and evolve in the field of computer programming.
+                        Thank you for visiting my portfolio, and I'm excited to connect and explore potential opportunities together.</p>
+                    
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Eduaction</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>App Development</span><br>Building Android/iOS apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>May'23-Aug'23</span><br>Automation Analyst Co-op at RBC</li>
+                                <li><span>Feb'21-Current</span><br>Customer Service Representative at Dominos</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021-2023</span><br>Diploma in Computer Programming at Georgian College</li>
+                            </ul>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+ <!--------------------------------------services------------------------------------->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web Design</h2>
+                <p>Elevate Your Digital Presence: As a solo web designer, I bring a personal touch to crafting unique and captivating websites. Specializing in creating individualized online experiences, I focus on delivering tailored designs that reflect your vision. From concept to execution, my services prioritize clean aesthetics, user-friendly interfaces, and responsiveness. Let me transform your ideas into a compelling digital masterpiece, ensuring your online presence stands out with a touch of personalized expertise</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>UI/UX Design</h2>
+                <p>Elevate Your Digital Presence: As a solo web designer, I bring a personal touch to crafting unique and captivating websites. Specializing in creating individualized online experiences, I focus on delivering tailored designs that reflect your vision. From concept to execution, my services prioritize clean aesthetics, user-friendly interfaces, and responsiveness. Let me transform your ideas into a compelling digital masterpiece, ensuring your online presence stands out with a touch of personalized expertise</p>
+                <a href="#">learn more</a>
+            </div> 
+            <div>
+                <h2>App Design</h2>
+                <p>Elevate Your Digital Presence: As a solo web designer, I bring a personal touch to crafting unique and captivating websites. Specializing in creating individualized online experiences, I focus on delivering tailored designs that reflect your vision. From concept to execution, my services prioritize clean aesthetics, user-friendly interfaces, and responsiveness. Let me transform your ideas into a compelling digital masterpiece, ensuring your online presence stands out with a touch of personalized expertise</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>        
+
+</body>
+</html>
